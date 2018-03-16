@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editphoto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.desarrollo_elevation.viveelite.MainActivity_Editarphoto">
+
+    <SurfaceView
+        android:id="@+id/cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativoinferior"
+        android:layout_below="@+id/toolbareditordeimagen"
+        android:gravity="center_vertical|center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/editafoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.photogesturelibrary.PhotoView
+                android:id="@+id/imagenviewphoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagenviewmarco"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name" />
+            </ViewFlipper>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativoinferior"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/idbarracolores"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#90000000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/btn_color_rojo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_red"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_color_verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/circel_green"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_color_blanco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_white"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_color_rosa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_pink"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_color_azul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_blue"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_color_negro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/crcle_black"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/idcarruceldemarcos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewercarrusel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/idMarcobarracolores"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#90000000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/btn_Marco_color_rojo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_red"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_Marco_color_verde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/circel_green"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_Marco_color_blanco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_white"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_Marco_color_rosa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_pink"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_Marco_color_azul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_blue"
+                android:text="" />
+
+            <Button
+                android:id="@+id/btn_Marco_color_negro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/crcle_black"
+                android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/buttonnavigatorid"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_y="468dp"
+        android:background="#E3E6E7"
+        android:visibility="invisible"
+        design:menu="@menu/menu_inferior_editor_imagen" />
+
+    <ImageView
+        android:id="@+id/camera_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbareditordeimagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#fff"
+        android:minHeight="?attr/actionBarSize"
+        android:title="Editor de imagen"
+        tools:ignore="UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/editTexticontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbareditordeimagen"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="150dp"
+        android:layout_x="62dp"
+        android:layout_y="160dp"
+        android:background="#50000000"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:maxLength="25"
+        android:text=""
+        android:textColor="#fff"
+        android:visibility="invisible" />
+
+    <GridView
+        android:id="@+id/gridviewicon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbareditordeimagen"
+        android:background="@mipmap/fondosticker"
+        android:columnWidth="80dp"
+        android:gravity="center"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:visibility="invisible">
+    </GridView>
+</RelativeLayout>

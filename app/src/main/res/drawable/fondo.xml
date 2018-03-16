@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/frame2" >
+        <shape android:shape="oval">
+
+            <solid android:color="@color/colorPrimary" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:innerRadiusRatio="4"
+            android:shape="ring"
+            android:thicknessRatio="9"
+            android:useLevel="false" >
+            <gradient
+                android:endColor="#00000000"
+                android:gradientRadius="250"
+                android:startColor="#ffffffff"
+                android:type="radial" />
+        </shape>
+    </item>
+
+</selector>

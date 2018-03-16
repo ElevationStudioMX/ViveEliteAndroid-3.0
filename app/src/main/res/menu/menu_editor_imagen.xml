@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/ideliminarsticker"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/iconeliminarstik"
+        app:showAsAction="always"
+        android:onClick="eliminarsticker"
+        android:visible="false"
+
+        />
+    <item
+        android:id="@+id/idcambiomarcocongesto"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:onClick="marcogesto"
+        android:icon="@mipmap/iconmovimientomarco"
+        android:visible="true"
+        app:showAsAction="always"/>
+
+
+
+    <item
+        android:id="@+id/detenermarcoimagen"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/iconmarcocambio"
+        app:showAsAction="always"
+        android:onClick="imagenbandera"
+
+
+        />
+
+
+    <item
+        android:id="@+id/texto"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/iconletrasticker"
+        app:showAsAction="always"
+        android:onClick="icontext"
+
+        />
+
+    <item
+        android:id="@+id/sticker"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/iconstcker"
+        app:showAsAction="always"
+        android:onClick="iconsticker"
+        />
+
+
+
+    <item
+        android:id="@+id/Settingimage"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/iconguardad"
+        app:showAsAction="always"
+        android:onClick="settings"
+        />
+
+
+</menu>

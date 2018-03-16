@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.desarrollo_elevation.viveelite.MainActivity_listview">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarlayer"
+        android:title="Recetas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        tools:ignore="UnusedAttribute"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="366dp"
+        android:layout_height="467dp"
+        android:orientation="vertical"
+        android:id="@+id/layer"
+
+
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_x="4dp"
+        android:layout_y="73dp" />
+</AbsoluteLayout>

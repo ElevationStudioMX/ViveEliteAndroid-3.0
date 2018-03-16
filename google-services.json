@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "891129474482",
+    "firebase_url": "https://elite-mexico-app.firebaseio.com",
+    "project_id": "elite-mexico-app",
+    "storage_bucket": "elite-mexico-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891129474482:android:b8b397068f4ab39b",
+        "android_client_info": {
+          "package_name": "com.elite.mexico.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891129474482-3tf5kdhrcu9qce6gd4bf5k2u82eeg6ob.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elite.mexico.app",
+            "certificate_hash": "8984fa58520988d98ec866f11f21b1ee2afc1810"
+          }
+        },
+        {
+          "client_id": "891129474482-erqtfn1a5gflph5t2lgp11lqvga64kgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXIVfztcJzDOk2eCOb8fZ03Z8eFLCfTQI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891129474482-j6830vldirjmg28t9r4ucaahr8hnboj0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mx.eliteapp",
+                "app_store_id": "1241359112"
+              }
+            },
+            {
+              "client_id": "891129474482-erqtfn1a5gflph5t2lgp11lqvga64kgo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

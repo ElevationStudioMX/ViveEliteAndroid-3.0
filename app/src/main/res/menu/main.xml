@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nose"
+        android:orderInCategory="100"
+        android:icon="@mipmap/editar_foto"
+        android:title="@string/menu"
+        app:theme="@style/Theme.AppCompat"
+        app:showAsAction="always"
+        android:onClick="iconeditphoto"
+        />
+
+
+    <item
+        android:id="@+id/shareimage"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/compartir_foto"
+        app:showAsAction="always"
+        app:theme="@style/Theme.AppCompat"
+        android:onClick="sharernetworkphoto"
+        />
+
+    <item
+        android:id="@+id/ideliminarimagen"
+        android:orderInCategory="100"
+        android:icon="@mipmap/borrar_foto"
+        android:title="@string/menu"
+
+        app:theme="@style/Theme.AppCompat"
+        app:showAsAction="always"
+        android:onClick="iconeliminarphoto"
+        />
+
+
+</menu>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.desarrollo_elevation.viveelite">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <application
+        android:allowBackup="true"
+
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/logoelites"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/logoelites"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".MainActivity_menutolbbed"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".MainActivity_listview" />
+        <activity android:name=".MainActivity_pruebavideo" />
+        <activity
+            android:name=".MainActivity_recetas"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".MainActivity_contenidoreceta"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.papeleselite.mx"
+                    android:pathPrefix="/receta/"
+                    android:scheme="http" />
+                <data
+                    android:host="www.papeleselite.mx"
+                    android:pathPrefix="/ejercicio/"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity_Ejercicios"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".MainActivity_detalle_video"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".MainActivity_menu_musica"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".MainActivity_detallewebview" />
+        <activity
+            android:name=".MainActivity_detalle_video_tam"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".MainActivity_Editarphoto"
+            android:configChanges="screenSize|orientation"
+            android:hardwareAccelerated="true"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".MainActivity_intro"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity_galeria_imagen"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".MainActivity_preview_image"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".MainActivity_QR"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".MainActivity_webviewQR" />
+        <activity
+            android:name=".details_video"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.papeleselite.mx"
+                    android:pathPrefix="/receta/"
+                    android:scheme="http" />
+                <data
+                    android:host="www.papeleselite.mx"
+                    android:pathPrefix="/ejercicio/"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity_loginspotify"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.spotify.sdk.android.authentication.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service android:name=".spotify.PlayerService" />
+
+        <activity
+            android:name="com.spotify.sdk.android.authentication.WebAuthResultActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="callback"
+                    android:scheme="testschema" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity_reproductor_playlist"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".MainActivity_reproductor_user_free"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".prueba_recycleviwer_base_datos" />
+        <activity android:name=".json.MainActivity_prueba_json" />
+        <activity android:name=".json.segunda_prueba_json" />
+        <activity
+            android:name=".MainActivity_Favoritos"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".json.Main_jason_rest" />
+        <activity
+            android:name=".MainActivity_productos_elite"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".MainActivity_detalle_producto" />
+        <activity
+            android:name=".view_detalle"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".popwindow"
+            android:theme="@style/borrega" />
+        <activity android:name=".Main_Activity_inicio"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            />
+        <activity android:name=".MainActivity_categorias"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            ></activity>
+    </application>
+
+</manifest>

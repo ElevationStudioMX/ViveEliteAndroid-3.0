@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="se" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="actionbar" parent="android:Theme.Holo">
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppT" parent="android:Theme.Holo.Light.DarkActionBar">
+
+
+        <item name="android:actionBarStyle">@style/Base.Widget.AppCompat.ActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+
+    </style>
+
+
+    <style name="greed"
+        parent="@android:style/Widget.Holo.Light.GridView">
+
+        <item name="android:background">@drawable/actionbartranslucent</item>
+
+    </style>
+
+    <style name="AppTheme.costumenoseque">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+
+    </style>
+
+    <style name="borrega" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name ="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+
+    </style>
+
+    <style name="Base.Widget.AppCompat.ActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+
+        <item name="android:background">@drawable/actionbartranslucent</item>
+
+    </style>
+
+    <style name="AppTheme.costumemarcos">
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+
+
+</resources>

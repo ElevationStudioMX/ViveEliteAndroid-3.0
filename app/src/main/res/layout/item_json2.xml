@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+       >
+
+
+        <TextView
+            android:text="countryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="19dp"
+            android:layout_y="223dp"
+            android:id="@+id/txtcountryCode" />
+
+        <TextView
+            android:text="lng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="18dp"
+            android:layout_y="189dp"
+            android:id="@+id/txtlng" />
+
+        <TextView
+            android:text="adminCode1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="15dp"
+            android:layout_y="117dp"
+            android:id="@+id/txtadminCode1" />
+
+        <TextView
+            android:text="adminName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="149dp"
+            android:id="@+id/txtadminName2" />
+
+        <TextView
+            android:text="adminName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="15dp"
+            android:layout_y="85dp"
+            android:id="@+id/txtadminName3" />
+
+        <TextView
+            android:text="adminCode3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="13dp"
+            android:layout_y="55dp"
+            android:id="@+id/txtadminCode3" />
+
+        <TextView
+            android:text="adminCode2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="14dp"
+            android:layout_y="21dp"
+            android:id="@+id/txtadminCode2" />
+
+        <TextView
+            android:text="postalcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="255dp"
+            android:id="@+id/txtpostalcode" />
+
+        <TextView
+            android:text="adminName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="289dp"
+            android:id="@+id/txtadminName1" />
+
+        <TextView
+            android:text="placeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="16dp"
+            android:layout_y="315dp"
+            android:id="@+id/txtplaceName" />
+
+        <TextView
+            android:text="lat"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_x="14dp"
+            android:layout_y="339dp"
+            android:id="@+id/txtlat" />
+    </AbsoluteLayout>
+
+</AbsoluteLayout>

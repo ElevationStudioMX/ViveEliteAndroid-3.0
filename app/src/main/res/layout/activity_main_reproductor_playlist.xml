@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_reproductor_playlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundreproduccion"
+    tools:context="com.example.desarrollo_elevation.viveelite.MainActivity_reproductor_playlist">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_x="0dp"
+        android:layout_y="-2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarreproductorplaylist"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/backgraund"
+                android:minHeight="?attr/actionBarSize"
+                tools:ignore="UnusedAttribute"
+                android:textAlignment="center"
+                app:theme="@style/Theme.AppCompat"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toolbar Title"
+                    android:textColor="#fff"
+                    android:layout_gravity="center"
+                    android:id="@+id/txttoolbar_title" />
+
+            </android.support.v7.widget.Toolbar>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    >
+
+    <ImageView
+        android:layout_width="142dp"
+        android:layout_height="126dp"
+        app:srcCompat="@mipmap/elite"
+        android:layout_x="5dp"
+        android:layout_y="71dp"
+        android:id="@+id/imagentrack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:text="track"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_x="150dp"
+            android:layout_y="79dp"
+            android:textColor="#fff"
+            android:id="@+id/txttrack" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="#fff"
+            android:id="@+id/txtArtistas" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="#fff"
+            android:id="@+id/txtAlbum" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="20dp"
+                >
+
+                <TextView
+                    android:text="00:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="23dp"
+                    android:layout_y="211dp"
+                    android:textColor="#fff"
+                    android:id="@+id/txtstart" />
+
+                <SeekBar
+                    android:layout_width="262dp"
+                    android:layout_height="wrap_content"
+                    android:layout_x="57dp"
+                    android:layout_y="211dp"
+                    android:id="@+id/seekBar"
+                    android:progressBackgroundTint="#6bc8ee"
+                    android:progressDrawable="@drawable/progress_seekbar"
+                    android:thumb="@drawable/thumb_seekbar"
+
+                    />
+                <TextView
+                    android:text="00:00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="319dp"
+                    android:textColor="#fff"
+                    android:layout_y="211dp"
+                    android:id="@+id/txtend" />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/previewplay"
+                    android:layout_x="62dp"
+                    android:layout_y="242dp"
+                    android:id="@+id/btnpreview"
+                    android:layout_marginLeft="60dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    app:srcCompat="@mipmap/play"
+                    android:layout_x="161dp"
+                    android:layout_y="242dp"
+                    android:id="@+id/btnplaystop"
+                    android:layout_marginLeft="60dp"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/nextplay"
+                    android:layout_x="266dp"
+                    android:layout_y="242dp"
+                    android:id="@+id/btnnext"
+                    android:layout_marginLeft="60dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerViewerreproductor"
+
+
+
+
+                >
+            </android.support.v7.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</AbsoluteLayout>

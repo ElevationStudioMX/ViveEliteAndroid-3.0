@@ -1,0 +1,96 @@
+<AbsoluteLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    android:background="#fff"
+    >
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="177dp"
+                android:scaleType="centerCrop"
+
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                >
+                <Button
+                    android:text="Lorem ipsum dolor sit"
+                    android:drawableLeft="@mipmap/imgreceta"
+                    android:layout_width="275dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff7cbd"
+                    android:id="@+id/btndetalleimg"
+
+
+                    />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    card_view:srcCompat="@mipmap/favoritos"
+                    android:id="@+id/idimgfavoritosimg"
+                    android:layout_marginTop="5dp"
+                    android:background="#fff"
+                     />
+
+                <ImageButton
+                    android:id="@+id/idimgcompartirimg"
+                    android:layout_width="50dp"
+                    android:layout_height="38dp"
+
+                    android:layout_marginTop="5dp"
+                    android:background="#fff"
+                    card_view:srcCompat="@mipmap/flecha2" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_y="226dp"
+                android:textColor="#5b6065"
+                android:id="@+id/txttextoimg"
+                android:layout_marginBottom="30dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</AbsoluteLayout>

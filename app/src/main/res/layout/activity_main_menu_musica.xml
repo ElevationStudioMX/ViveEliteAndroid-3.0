@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_menu_musica"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundplaylist"
+
+    tools:context="com.example.desarrollo_elevation.viveelite.MainActivity_menu_musica">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scrollbars="vertical"
+      android:id="@+id/recyclerViewerplaylist"
+
+      android:layout_y="51dp">
+
+  </android.support.v7.widget.RecyclerView>
+
+
+    </AbsoluteLayout>
+</ScrollView>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarmusica"
+        android:title="Playlist"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/backgraund"
+        android:minHeight="?attr/actionBarSize"
+        tools:ignore="UnusedAttribute"
+        app:theme="@style/Theme.AppCompat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toolbar Title"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:id="@+id/txttoolbar_title_playlist" />
+
+    </android.support.v7.widget.Toolbar>
+</AbsoluteLayout>

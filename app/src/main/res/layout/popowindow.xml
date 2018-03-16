@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutpopview"
+    android:background="#00000000"
+    >
+
+    <ImageView
+        android:id="@+id/imagepopwindow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+
+        android:src="@drawable/popup" />
+
+    <TextView
+        android:id="@+id/texthistoria"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:layout_x="0dp"
+        android:layout_y="386dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:text="conoce nuestra historia"
+        android:textAlignment="center"
+        android:textColor="#fff">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/imageButtoneliminar"
+        android:layout_width="54dp"
+        android:layout_height="57dp"
+        android:layout_x="289dp"
+        android:layout_y="-5dp"
+        app:srcCompat="@mipmap/eliminarpopup" />
+</AbsoluteLayout>

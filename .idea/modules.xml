@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ViveEliteAndroid.iml" filepath="$PROJECT_DIR$/ViveEliteAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helperyoutube/helperyoutube.iml" filepath="$PROJECT_DIR$/helperyoutube/helperyoutube.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photogesturelibrary/photogesturelibrary.iml" filepath="$PROJECT_DIR$/photogesturelibrary/photogesturelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-api-spotify/web-api-spotify.iml" filepath="$PROJECT_DIR$/web-api-spotify/web-api-spotify.iml" />
+    </modules>
+  </component>
+</project>

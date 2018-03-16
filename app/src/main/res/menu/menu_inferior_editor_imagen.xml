@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/shareimagen"
+        android:orderInCategory="100"
+        android:title="Compartir"
+        android:icon="@drawable/share"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/saveimagen"
+        android:orderInCategory="100"
+        android:title="Guardar"
+        android:icon="@mipmap/save"
+        app:showAsAction="always" />
+</menu>

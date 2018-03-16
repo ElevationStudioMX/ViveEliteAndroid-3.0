@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundmenu"
+
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+
+        <Button
+            android:text="Productos"
+            android:layout_width="164dp"
+            android:layout_height="59dp"
+            android:layout_x="104dp"
+            android:layout_y="10dp"
+            android:drawableLeft="@mipmap/productos"
+
+            android:id="@+id/btnproductos"
+            android:background="#6AC8FE"
+            android:textColor="#FFF"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            />
+
+
+
+    <Button
+        android:text="Favoritos"
+        android:layout_width="164dp"
+        android:layout_height="59dp"
+        android:layout_x="104dp"
+        android:layout_y="10dp"
+        android:drawableLeft="@mipmap/favoritos_menu"
+
+        android:id="@+id/btnfavoritos"
+        android:background="#6AC8FE"
+        android:textColor="#FFF"
+        android:layout_marginBottom="25dp"
+
+        />
+
+    <Button
+        android:text="Recetas"
+        android:layout_width="164dp"
+        android:layout_height="59dp"
+        android:layout_x="105dp"
+        android:layout_y="91dp"
+        android:drawableLeft="@mipmap/recetas"
+        android:id="@+id/btnrecetas"
+        android:background="#6AC8FE"
+        android:layout_marginBottom="25dp"
+        android:textColor="#FFF" />
+
+
+        <Button android:text="Ejercicio"
+            android:layout_width="164dp"
+            android:layout_height="59dp"
+            android:layout_x="105dp"
+            android:layout_y="179dp"
+            android:drawableLeft="@mipmap/ejercicios"
+            android:id="@+id/btnejercicio"
+            android:background="#6AC8FE"
+            android:textColor="#FFF"
+            android:layout_marginBottom="25dp"
+            />
+
+    <Button
+        android:text="Memorias"
+        android:layout_width="164dp"
+        android:layout_height="59dp"
+        android:layout_x="107dp"
+        android:layout_y="278dp"
+        android:drawableLeft="@mipmap/memorias"
+        android:id="@+id/btnmemorias"
+        android:background="#6AC8FE"
+        android:textColor="#FFF"
+        android:layout_marginBottom="25dp"
+        />
+
+
+
+    <Button
+        android:text="Música"
+        android:layout_width="164dp"
+        android:layout_height="59dp"
+        android:layout_x="107dp"
+        android:layout_y="373dp"
+        android:drawableLeft="@mipmap/musica"
+        android:id="@+id/btnmusica"
+        android:background="#6AC8FE"
+        android:textColor="#FFF"
+        android:layout_marginBottom="25dp"
+        />
+
+    <Button
+        android:text="Promociones"
+        android:layout_width="164dp"
+        android:layout_height="59dp"
+        android:layout_x="107dp"
+        android:layout_y="458dp"
+        android:drawableLeft="@mipmap/promociones"
+        android:id="@+id/btnpromociones"
+        android:background="#6AC8FE"
+        android:layout_marginBottom="25dp"
+        android:textColor="#FFF" />
+    </LinearLayout>
+</ScrollView>
+</AbsoluteLayout>

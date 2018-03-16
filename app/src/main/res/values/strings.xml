@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Elite</string>
+    <string name="menu">Menu</string>
+    <string name="title_activity_main_menutabbed">MainActivity_menutabbed</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="page1"></string>
+    <string name="page2"></string>
+    <string name="page3"></string>
+    <string name="page4"></string>
+    <string name="loading_video">Loading video…</string>
+    <string name="preparacion"><font fgcolor="#65e2e3">Preparación</font></string>
+
+
+</resources>
