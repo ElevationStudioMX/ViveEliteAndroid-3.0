@@ -234,20 +234,7 @@ public class MultiViewTypeAdapter extends RecyclerView.Adapter<RecyclerView.View
                 }
             });
         }
-
     }
-
-
-
-
-   /* public void addData(ArrayList<Model> item){
-        dataSet.addAll(item);
-        notifyDataSetChanged();
-    }*/
-
-
-
-
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -259,14 +246,11 @@ public class MultiViewTypeAdapter extends RecyclerView.Adapter<RecyclerView.View
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.type_image, parent, false);
                 return new ImageTypeViewHolder(view);
 
-
             case Model.VIDEO_TYPE:
                 view = LayoutInflater.from(parent.getContext()).inflate(R.layout.type_video2, parent, false);
                 return new VideoTypeViewHolder(view);
         }
         return null;
-
-
     }
 
 
@@ -464,7 +448,7 @@ public class MultiViewTypeAdapter extends RecyclerView.Adapter<RecyclerView.View
 
 
 
-                            Log.d("contexto imag " ,contexto);
+                            Log.d("contexto image_dv " ,contexto);
 
                             if(contexto.equals(contexto_inicio))
                             {

@@ -328,7 +328,7 @@ public class details_video extends AppCompatActivity {
                /* durateiemp.setText(dura+"\n\n");
                 getSupportActionBar().setTitle(title);
                 titulo.setText(title);
-                Picasso.with(this).load(imagenes).resize(1000,0).into(imag);
+                Picasso.with(this).load(imagenes).resize(1000,0).into(image_dv);
             }
 */
 /*
@@ -1623,7 +1623,7 @@ public class details_video extends AppCompatActivity {
 
                 web.loadData(combinada, "text/html", "UTF-16");
                // titulo.setText(/*"Muffins de Plàtano con Crema de Cacahuate"*/titulos);
-                //Picasso.with(MainActivity_contenidoreceta.this).load(contenido/*R.drawable.muffinsplatano*/).resize(1000, 0).into(imag);
+                //Picasso.with(MainActivity_contenidoreceta.this).load(contenido/*R.drawable.muffinsplatano*/).resize(1000, 0).into(image_dv);
                 //text.setText(preparaciones+"\n"/*, true*/);
                 /*durateiemp.setText(duraciones+"\n\n");
 
@@ -1954,7 +1954,7 @@ public class details_video extends AppCompatActivity {
                 web.loadData(combinada, "text/html", "UTF-16");
 
                 //titulo.setText(/*"Muffins de Plàtano con Crema de Cacahuate"*/titulos);
-                //Picasso.with(MainActivity_contenidoreceta.this).load(contenido/*R.drawable.muffinsplatano*/).resize(1000, 0).into(imag);
+                //Picasso.with(MainActivity_contenidoreceta.this).load(contenido/*R.drawable.muffinsplatano*/).resize(1000, 0).into(image_dv);
                 //subtitulo.setText(descripcion_ejercicio+"\n"/*, true*/);
                 //durateiemp.setText(duraciones+"\n\n");
                 // .setText("Preparación");

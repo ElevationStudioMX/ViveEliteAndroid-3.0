@@ -25,21 +25,11 @@ import java.util.ArrayList;
 
 public class Adaptergridrow extends BaseAdapter {
     Context context;
-    //int layoutResourceId;
-    // String[] titulo;
-    //int[] imagen;
-    //String [] imagen;
-
     ArrayList<String> imagen;
     private  String name_database_elite= "elite_v15";
     private Cursor cursor;
     int total_types;
-//    String []filepath;
-
-
-
     LayoutInflater inflater;
-    // ArrayList<ClipData.Item> data = new ArrayList<ClipData.Item>();
 
     public Adaptergridrow(Context context, /*String[] titulo,*/ ArrayList<String> imagen )/*int layoutResourceId, ArrayList<ClipData.Item> data*/ {
         // super(context, layoutResourceId, data); this.layoutResourceId = layoutResourceId;
@@ -73,59 +63,26 @@ public class Adaptergridrow extends BaseAdapter {
     public View getView(int position, View Convertview, ViewGroup parent) {
         TextView text;
         ImageView image;
-
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View itemview = inflater.inflate(R.layout.row_grid, parent, false);
 
-
-        //text =(TextView)itemview.findViewById(R.id.item_text);
-        image = (ImageView) itemview.findViewById(R.id.item_image);
+        image = itemview.findViewById(R.id.item_image);
         Picasso.with(context).load(imagen.get(position)).resize(300, 0).into(image);
-
         DBHome home = new DBHome(context, name_database_elite, null, 1);
-
         SQLiteDatabase database = home.getWritableDatabase();
-
         String query ="select color_filter from sticker where sticker ='"+imagen.get(position)+"'";
         cursor = database.rawQuery(query, null);
 
-
-        while (cursor.moveToNext())
-        {
+        while (cursor.moveToNext()) {
             int col_filt = cursor.getInt(0);
 
             Log.v("LINEA 97", "LINEA 97 col_filt "+col_filt);
 
-            if(col_filt == 1)
-            {
+            if(col_filt == 1) {
                 image.setColorFilter(Color.WHITE);
             }
-
-            else
-            {
-
-            }
-
-
         }
-
         database.close();
-
-        //  text.setText(titulo[position]);
-        //image.setImageResource(imagen[position]);
-
-        /*Log.v("position", ""+imagen.get(position));
-
-        if(position > 2)
-        {
-            image.setColorFilter(Color.WHITE);
-        }*/
-
-
-
         return itemview;
-
-
-
     }
 }

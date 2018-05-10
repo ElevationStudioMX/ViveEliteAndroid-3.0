@@ -59,8 +59,6 @@ ProgressDialog progressDialog;
         texto.setTypeface(typeface);
         texto.setTextSize(16);
 
-
-
         DBHome dbhome = new DBHome(MainActivity_Favoritos.this, name_database_elite, null, 1);
 
         SQLiteDatabase sqLiteDatabase = dbhome.getWritableDatabase();

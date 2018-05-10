@@ -3,48 +3,35 @@
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
-
-    android:background="#fff"
-    >
-
-
-
+    android:background="#fff">
 
         <LinearLayout
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/background"
                 android:layout_width="match_parent"
                 android:layout_height="177dp"
-                android:scaleType="centerCrop"
-
-
-                />
+                android:visibility="gone"
+                android:scaleType="centerCrop" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center_horizontal"
-                >
+                android:gravity="center_horizontal">
+
                 <Button
                     android:text="Lorem ipsum dolor sit"
                     android:drawableLeft="@mipmap/imgreceta"
                     android:layout_width="275dp"
-                    android:gravity="center_horizontal"
+                    android:gravity="left"
                     android:layout_height="wrap_content"
                     android:textColor="#ff7cbd"
-                    android:id="@+id/btndetalleimg"
-
-
-                    />
+                    android:id="@+id/btndetalleimg"/>
 
                 <ImageButton
                     android:layout_width="40dp"
@@ -52,20 +39,16 @@
                     card_view:srcCompat="@mipmap/favoritos"
                     android:id="@+id/idimgfavoritosimg"
                     android:layout_marginTop="5dp"
-                    android:background="#fff"
-                     />
+                    android:background="#fff"/>
 
                 <ImageButton
                     android:id="@+id/idimgcompartirimg"
                     android:layout_width="50dp"
                     android:layout_height="38dp"
-
                     android:layout_marginTop="5dp"
                     android:background="#fff"
                     card_view:srcCompat="@mipmap/flecha2" />
-
             </LinearLayout>
-
 
             <TextView
                 android:text="TextView"
@@ -82,15 +65,4 @@
                 />
 
         </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
 </AbsoluteLayout>

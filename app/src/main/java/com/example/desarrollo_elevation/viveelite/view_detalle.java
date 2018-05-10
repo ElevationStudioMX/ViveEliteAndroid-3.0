@@ -572,7 +572,7 @@ public class view_detalle  extends AppCompatActivity {
 
 
 
-            //imag.setImageResource(imagen);
+            //image_dv.setImageResource(imagen);
 
 
 
@@ -581,9 +581,9 @@ public class view_detalle  extends AppCompatActivity {
                 public void onClick(View view) {
 
 
-                    //  imag.buildDrawingCache();
+                    //  image_dv.buildDrawingCache();
 
-                    //  Bitmap bitmap = imag.getDrawingCache();
+                    //  Bitmap bitmap = image_dv.getDrawingCache();
                     try {
 
                 /*    File file = new File(getApplicationContext().getCacheDir(), bitmap + ".png");
