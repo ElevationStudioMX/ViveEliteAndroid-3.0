@@ -4,11 +4,11 @@ android {
     compileSdkVersion 27
     buildToolsVersion "27.0.3"
     defaultConfig {
-        applicationId "com.elite.mexico.app"
+        applicationId "com.elite.absormex.app"
         minSdkVersion 19
         targetSdkVersion 27
-        versionCode 8
-        versionName "1.2.3"
+        versionCode 10
+        versionName "2.0.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

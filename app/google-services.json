@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:891129474482:android:b8b397068f4ab39b",
         "android_client_info": {
-          "package_name": "com.elite.mexico.app"
+          "package_name": "com.elite.absormex.app"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "891129474482-3tf5kdhrcu9qce6gd4bf5k2u82eeg6ob.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.elite.mexico.app",
+            "package_name": "com.elite.absormex.app",
             "certificate_hash": "8984fa58520988d98ec866f11f21b1ee2afc1810"
           }
         },
